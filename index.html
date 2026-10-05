@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TJ Joseph — Communications</title>
+<meta name="description" content="TJ Joseph writes about human rights, history and memory for general audiences. Communications and outreach work at the UN Department of Global Communications. Based in New York.">
+<meta property="og:title" content="TJ Joseph — Communications">
+<meta property="og:description" content="Writing about human rights for people who don't read UN documents for a living.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%2317565F'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='16' fill='white' text-anchor='middle'%3ETJ%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Public+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+
+<style>
+/* Layout: one reading column with a mono metadata rail on the left at desktop width; rail stacks above content on narrow screens. */
+:root{
+  --paper:#F4F6F7;
+  --ink:#15191C;
+  --muted:#5D686D;
+  --rule:#D9DFE1;
+  --accent:#17565F;
+  --accent-soft:#E2ECED;
+  --font-display:"Instrument Serif", Georgia, "Times New Roman", serif;
+  --font-body:"Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono:"IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#111517;
+    --ink:#E7EBEB;
+    --muted:#8D989D;
+    --rule:#242C2F;
+    --accent:#77C0CA;
+    --accent-soft:#17262A;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#111517;
+  --ink:#E7EBEB;
+  --muted:#8D989D;
+  --rule:#242C2F;
+  --accent:#77C0CA;
+  --accent-soft:#17262A;
+  color-scheme: dark;
+}
+
+*{box-sizing:border-box}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{
+  max-width:60rem;
+  margin:0 auto;
+  padding-inline:20px;
+  padding-block:clamp(2.5rem,7vw,5rem) 4rem;
+}
+
+/* ---- header ---- */
+header{display:grid;gap:1.25rem;padding-bottom:2.5rem}
+h1{
+  font-family:var(--font-display);
+  font-weight:400;
+  font-size:clamp(2.8rem,9vw,4.5rem);
+  line-height:1.02;
+  margin:0;
+  letter-spacing:-0.01em;
+  text-wrap:balance;
+}
+.standfirst{
+  font-size:clamp(1.05rem,2.4vw,1.3rem);
+  line-height:1.45;
+  max-width:34ch;
+  margin:0;
+  color:var(--ink);
+}
+.facts{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.4rem 1.4rem;
+  font-family:var(--font-mono);
+  font-size:.74rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+.contact{
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  gap:.6rem .9rem;
+  padding-top:.4rem;
+}
+.email{
+  font-family:var(--font-mono);
+  font-size:.9rem;
+  color:var(--ink);
+  user-select:all;
+  word-break:break-all;
+}
+button.copy{
+  font-family:var(--font-mono);
+  font-size:.7rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--accent);
+  background:var(--accent-soft);
+  border:1px solid transparent;
+  border-radius:2px;
+  padding:.3rem .55rem;
+  cursor:pointer;
+}
+button.copy:hover{border-color:var(--accent)}
+a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+/* ---- sections ---- */
+section{
+  display:grid;
+  grid-template-columns:1fr;
+  gap:1rem;
+  padding-top:2.75rem;
+  border-top:2px solid var(--ink);
+  margin-top:2.5rem;
+}
+@media (min-width:860px){
+  section{grid-template-columns:9.5rem 1fr;gap:2.75rem}
+}
+.rail{min-width:0}
+.rail h2{
+  position:sticky;
+  top:calc(env(safe-area-inset-top, 0px) + 1.5rem);
+  font-family:var(--font-mono);
+  font-size:.74rem;
+  font-weight:500;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin:0;
+}
+.body{min-width:0;display:grid;gap:0}
+.lede{
+  margin:0 0 .5rem;
+  max-width:62ch;
+  color:var(--muted);
+  font-size:.95rem;
+}
+
+/* ---- work entries ---- */
+article{
+  padding-block:1.7rem;
+  border-top:1px solid var(--rule);
+  display:grid;
+  gap:.55rem;
+  min-width:0;
+}
+article:first-of-type{border-top:0;padding-top:.75rem}
+h3{
+  font-family:var(--font-display);
+  font-weight:400;
+  font-size:clamp(1.35rem,3.2vw,1.6rem);
+  line-height:1.2;
+  margin:0;
+  text-wrap:balance;
+}
+h3 em{font-style:italic}
+.credit{
+  font-family:var(--font-mono);
+  font-size:.72rem;
+  letter-spacing:.05em;
+  color:var(--muted);
+  margin:0;
+  display:flex;
+  flex-wrap:wrap;
+  gap:.35rem .55rem;
+  align-items:center;
+}
+.status{
+  display:inline-block;
+  font-family:var(--font-mono);
+  font-size:.66rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--accent);
+  background:var(--accent-soft);
+  padding:.15rem .45rem;
+  border-radius:2px;
+  white-space:nowrap;
+}
+article p.desc{margin:0;max-width:64ch}
+.links{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.5rem 1.1rem;
+  font-family:var(--font-mono);
+  font-size:.78rem;
+  margin:.15rem 0 0;
+}
+/* ---- background list ---- */
+dl{margin:0;display:grid;gap:1.1rem}
+@media (min-width:560px){dl{grid-template-columns:auto 1fr;gap:1rem 1.75rem;align-items:baseline}}
+dt{
+  font-family:var(--font-mono);
+  font-size:.72rem;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+  color:var(--muted);
+  min-width:0;
+}
+dd{margin:0;min-width:0;max-width:60ch}
+dd .sub{color:var(--muted);font-size:.9rem}
+
+footer{
+  margin-top:3.5rem;
+  padding-top:1.5rem;
+  border-top:1px solid var(--rule);
+  font-family:var(--font-mono);
+  font-size:.74rem;
+  letter-spacing:.04em;
+  color:var(--muted);
+  display:flex;
+  flex-wrap:wrap;
+  gap:.5rem 1.25rem;
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation:none!important;transition:none!important}
+}
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+
+  <header>
+    <h1>TJ Joseph</h1>
+    <p class="standfirst">I write about human rights for people who don&rsquo;t read UN documents for a living.</p>
+    <ul class="facts">
+      <li>New York, NY</li>
+      <li>English &amp; Spanish</li>
+      <li>Available February 2027</li>
+    </ul>
+    <div class="contact">
+      <span class="email" id="email">thomasjjoseph24@gmail.com</span>
+      <button class="copy" id="copyBtn" type="button">Copy</button>
+      <a href="https://www.linkedin.com/in/thomas-joseph-72727a258" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </header>
+
+  <section>
+    <div class="rail"><h2>Now</h2></div>
+    <div class="body">
+      <p class="desc" style="max-width:64ch">I&rsquo;m a communications and outreach intern at the UN Department of Global Communications, in the section that runs the Outreach Programme on the Transatlantic Slave Trade and Slavery. I write the programme&rsquo;s monthly newsletter, rewrite its public web content, draft speeches and talking points for senior staff, and help build the events that carry the programme&rsquo;s mandate into a room. The work is equal parts research, editing, and judgment about what a general reader can actually be expected to know.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="rail"><h2>Selected work</h2></div>
+    <div class="body">
+      <p class="lede">Some of this work is internal or awaiting publication, so a few entries are described rather than linked. Documents are available on request.</p>
+
+      <article>
+        <h3>Remember Slavery website, question-and-answer restructure</h3>
+        <p class="credit"><span>United Nations DGC</span><span>&middot;</span><span>2026</span><span class="status">Delivered</span></p>
+        <p class="desc">The programme&rsquo;s public pages carried years of layered institutional copy that was hard to read and hard to find in search. I restructured the landing page and eight feature pages into a question-and-answer format built around how people actually search the subject, wrote the questions to be schema-ready, and ordered every recommendation by effort against impact. Delivered as a 19-page editorial document; implementation sits with the web team.</p>
+      </article>
+
+      <article>
+        <h3>Background page, Remember Slavery</h3>
+        <p class="credit"><span>United Nations DGC</span><span>&middot;</span><span>2026</span><span class="status">In draft</span></p>
+        <p class="desc">New visitors arrive without the vocabulary the rest of the site assumes. I&rsquo;m drafting a background page covering the duration of the trade, its scale and distances, the countries and destinations involved, and the difference between abolishing the trade and abolishing slavery &mdash; deliberately excluding legacy and after-effects material, which belongs on a page of its own. Every claim carries an inline citation and a Chicago-style reference.</p>
+      </article>
+
+      <article>
+        <h3>Transatlantic slave trade timeline</h3>
+        <p class="credit"><span>Self-initiated</span><span>&middot;</span><span>2026</span><span class="status">In development</span></p>
+        <p class="desc">Proposed to my supervisor, then researched and built on my own: a chronology of the trade and its abolition, written entry by entry, intended to sit alongside the existing Remember Slavery pages. Publication is under consideration.</p>
+      </article>
+
+      <article>
+        <h3>Monthly newsletter, Outreach Programme on the Transatlantic Slave Trade and Slavery</h3>
+        <p class="credit"><span>United Nations DGC</span><span>&middot;</span><span>5,100+ subscribers</span><span class="status">Ongoing</span></p>
+        <p class="desc">I research, write, and produce the programme&rsquo;s monthly newsletter end to end &mdash; editorial planning against anniversaries and UN observances, drafting, the Mailchimp build, and the Canva assets. Recent issues have been built around the centenary of the 1926 Slavery Convention and the twenty-fifth anniversary of the Durban Declaration.</p>
+      </article>
+
+      <article>
+        <h3>The Transatlantic Trade in Enslaved Africans and Its Legacies</h3>
+        <p class="credit"><span>UN Headquarters, New York</span><span>&middot;</span><span>3 December 2026</span><span class="status">Forthcoming</span></p>
+        <p class="desc">A two-panel event following General Assembly resolution A/RES/80/250 &mdash; one panel on the language used to describe enslavement, one on how countries teach it. I co-drafted the concept note and led speaker research and outreach, building a vetted list of scholars, diplomats, and artists across institutions in North America, Europe, and Latin America.</p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <div class="rail"><h2>Published</h2></div>
+    <div class="body">
+
+      <article>
+        <h3><em>Oral History with Audrey Mae Hernandez</em></h3>
+        <p class="credit"><span>Ethnic Studies Oral Histories, Digital USD</span><span>&middot;</span><span>23 September 2023</span></p>
+        <p class="desc">An interview on a mixed cultural upbringing, the pursuit of education, and what Island Grad means to her &mdash; recorded, transcribed, and deposited in the University of San Diego&rsquo;s digital repository, where it is the first item in the collection. Credited as interviewer; full transcript available.</p>
+        <p class="links">
+          <a href="https://digital.sandiego.edu/ethn-oh/1/" target="_blank" rel="noopener">Read at Digital USD</a>
+        </p>
+      </article>
+
+      <article>
+        <h3>The USD Vista</h3>
+        <p class="credit"><span>Assistant Sports Editor</span><span>&middot;</span><span>University of San Diego</span><span>&middot;</span><span>2022</span></p>
+        <p class="desc">Weekly sports reporting on deadline for the university newspaper. Three bylines ran in a single issue on 22 September 2022: a multi-sport weekly recap covering five programmes, a volleyball feature on the USD Invitational, and a football game story.</p>
+        <p class="links">
+          <a href="clips/vista-2022-09-22-p11.jpg" target="_blank" rel="noopener">&ldquo;Weekly recap&rdquo; &mdash; p.&thinsp;11</a>
+          <a href="clips/vista-2022-09-22-p12.jpg" target="_blank" rel="noopener">&ldquo;Can&rsquo;t stop winning&rdquo; and &ldquo;One point down&rdquo; &mdash; p.&thinsp;12</a>
+        </p>
+      </article>
+
+      <article>
+        <h3><em>On &amp; Off the Field with Noah Miles</em></h3>
+        <p class="credit"><span>Black Student Resource Commons, University of San Diego</span><span>&middot;</span><span>November 2022</span></p>
+        <p class="desc">An interview with a student athlete, published as a credited feature on the Commons&rsquo; channels.</p>
+      </article>
+
+      <article>
+        <h3>Oral history interview series</h3>
+        <p class="credit"><span>University of San Diego</span><span>&middot;</span><span>2023&ndash;2025</span></p>
+        <p class="desc">Five hour-long interviews with San Diego community leaders, recorded in the USD Media Lab, then transcribed, edited, and digitized for the university&rsquo;s digital library. The Hernandez interview above is the published entry from this series.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <div class="rail"><h2>Background</h2></div>
+    <div class="body">
+      <dl>
+        <dt>Writing</dt>
+        <dd>Newsletters, web copy, speeches and talking points, grant proposals, interviews, long-form research</dd>
+
+        <dt>Digital</dt>
+        <dd>Mailchimp, Canva, SEO and web content structure, social media<br><span class="sub">Adobe Premiere Pro, Audacity, CapCut</span></dd>
+
+        <dt>Languages</dt>
+        <dd>English (native), Spanish (full professional proficiency)</dd>
+
+        <dt>Education</dt>
+        <dd>M.A. Human Rights and Conflict Management, Scuola Superiore Sant&rsquo;Anna &mdash; expected May 2027<br><span class="sub">Coursework complete; completing the thesis remotely from New York</span></dd>
+
+        <dt></dt>
+        <dd>B.A. Ethnic Studies, University of San Diego, <em>cum laude</em> &mdash; 2025<br><span class="sub">Minors in Spanish and Africana Studies</span></dd>
+      </dl>
+    </div>
+  </section>
+
+  <footer>
+    <span>TJ Joseph</span>
+    <span>New York, NY</span>
+    <span>thomasjjoseph24@gmail.com</span>
+  </footer>
+
+</div>
+
+<script>
+(function(){
+  var btn = document.getElementById('copyBtn');
+  var email = document.getElementById('email');
+  if(!btn || !email) return;
+  btn.addEventListener('click', function(){
+    var text = email.textContent.trim();
+    var done = function(){
+      btn.textContent = 'Copied';
+      setTimeout(function(){ btn.textContent = 'Copy'; }, 1600);
+    };
+    var fallback = function(){
+      try{
+        var r = document.createRange();
+        r.selectNodeContents(email);
+        var s = window.getSelection();
+        s.removeAllRanges();
+        s.addRange(r);
+        btn.textContent = 'Selected';
+        setTimeout(function(){ btn.textContent = 'Copy'; }, 1600);
+      }catch(e){}
+    };
+    try{
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(text).then(done, fallback);
+      } else { fallback(); }
+    }catch(e){ fallback(); }
+  });
+})();
+</script>
+
+</body></html>
