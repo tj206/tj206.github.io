@@ -206,6 +206,21 @@ article p.desc{margin:0;max-width:64ch}
   font-size:.78rem;
   margin:.15rem 0 0;
 }
+
+/* ---- images ---- */
+.thumb{margin:.35rem 0 .2rem;max-width:15rem}
+.thumb img,.gallery img{display:block;width:100%;height:auto;border:1px solid var(--rule);border-radius:2px;background:var(--rule)}
+.thumb a,.gallery a{display:block}
+.thumb a:hover img,.gallery a:hover img{border-color:var(--accent)}
+.strip{display:flex;gap:.75rem;overflow-x:auto;scroll-snap-type:x mandatory;padding:.2rem 0 .6rem;margin:.35rem 0 0;max-width:100%;-webkit-overflow-scrolling:touch}
+.strip a{flex:0 0 auto;width:min(15rem,70vw);scroll-snap-align:start;display:block}
+.strip img{display:block;width:100%;height:auto;border:1px solid var(--rule);border-radius:2px}
+.strip a:hover img{border-color:var(--accent)}
+.hint{margin:0;font-family:var(--font-mono);font-size:.7rem;letter-spacing:.04em;color:var(--muted)}
+.gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(10.5rem,1fr));gap:1.4rem 1.2rem;margin-top:1.1rem;align-items:start}
+.gallery figure{margin:0;min-width:0}
+.gallery figcaption{font-size:.85rem;line-height:1.4;color:var(--muted);margin-top:.55rem}
+
 /* ---- background list ---- */
 dl{margin:0;display:grid;gap:1.1rem}
 @media (min-width:560px){dl{grid-template-columns:auto 1fr;gap:1rem 1.75rem;align-items:baseline}}
@@ -269,6 +284,16 @@ footer{
     <div class="body">
       <p class="lede">Some of this work is internal or awaiting publication, so a few entries are described rather than linked. Documents are available on request.</p>
 
+
+      <article>
+        <h3>#RememberSlavery, the programme&rsquo;s monthly newsletter</h3>
+        <p class="credit"><span>United Nations DGC</span><span>&middot;</span><span>Launched September 2026</span><span>&middot;</span><span>5,100+ subscribers</span><span class="status">Ongoing</span></p>
+        <p class="desc">In September the programme launched its first monthly newsletter. I researched and wrote much of the first issue &mdash; built around the International Day for People of African Descent and the twenty-fifth anniversary of the Durban Declaration &mdash; and I&rsquo;m producing the October issue. Each one has to turn institutional news from across the UN system into something a teacher or a student would actually open.</p>
+        <p class="links">
+          <a href="https://mailchi.mp/6424e0d13ea7/united-nations-rememberslavery-newsletter-september-2026-edition" target="_blank" rel="noopener">Read the September 2026 issue</a>
+        </p>
+      </article>
+
       <article>
         <h3>Remember Slavery website, question-and-answer restructure</h3>
         <p class="credit"><span>United Nations DGC</span><span>&middot;</span><span>2026</span><span class="status">Delivered</span></p>
@@ -285,12 +310,6 @@ footer{
         <h3>Transatlantic slave trade timeline</h3>
         <p class="credit"><span>Self-initiated</span><span>&middot;</span><span>2026</span><span class="status">In development</span></p>
         <p class="desc">Proposed to my supervisor, then researched and built on my own: a chronology of the trade and its abolition, written entry by entry, intended to sit alongside the existing Remember Slavery pages. Publication is under consideration.</p>
-      </article>
-
-      <article>
-        <h3>Monthly newsletter, Outreach Programme on the Transatlantic Slave Trade and Slavery</h3>
-        <p class="credit"><span>United Nations DGC</span><span>&middot;</span><span>5,100+ subscribers</span><span class="status">Ongoing</span></p>
-        <p class="desc">I research, write, and produce the programme&rsquo;s monthly newsletter end to end &mdash; editorial planning against anniversaries and UN observances, drafting, the Mailchimp build, and the Canva assets. Recent issues have been built around the centenary of the 1926 Slavery Convention and the twenty-fifth anniversary of the Durban Declaration.</p>
       </article>
 
       <article>
@@ -327,7 +346,21 @@ footer{
       <article>
         <h3><em>On &amp; Off the Field with Noah Miles</em></h3>
         <p class="credit"><span>Black Student Resource Commons, University of San Diego</span><span>&middot;</span><span>November 2022</span></p>
-        <p class="desc">An interview with a student athlete, published as a credited feature on the Commons&rsquo; channels.</p>
+        <p class="desc">A seven-question interview with a Black football player and behavioral neuroscience major &mdash; often the only athlete in his classes &mdash; on the brotherhood of a team, the assumptions people bring to student-athletes, coaches who do and don&rsquo;t understand him, and fitting labs around practice. I wrote the questions, conducted the interview, and edited his answers into a carousel for the Commons&rsquo; Instagram, where it ran credited to me.</p>
+        <div class="strip" aria-label="Carousel slides">
+          <a href="design/noah-miles-cover.jpg" target="_blank" rel="noopener"><img src="design/noah-miles-cover-thumb.jpg" alt="Slide 1, cover: On and Off the Field with Noah Miles, junior, neuroscience major" loading="lazy" width="640" height="640"></a>
+          <a href="design/noah-miles-q1.jpg" target="_blank" rel="noopener"><img src="design/noah-miles-q1-thumb.jpg" alt="Slide 2, question 1: What&rsquo;s your favorite thing about being a student-athlete at USD?" loading="lazy" width="560" height="560"></a>
+          <a href="design/noah-miles-q2.jpg" target="_blank" rel="noopener"><img src="design/noah-miles-q2-thumb.jpg" alt="Slide 3, question 2: Do you feel the same support as a Black student inside the classroom?" loading="lazy" width="560" height="560"></a>
+          <a href="design/noah-miles-q3.jpg" target="_blank" rel="noopener"><img src="design/noah-miles-q3-thumb.jpg" alt="Slide 4, question 3: Do you feel supported by your coaching staff and the football program?" loading="lazy" width="560" height="560"></a>
+          <a href="design/noah-miles-q4.jpg" target="_blank" rel="noopener"><img src="design/noah-miles-q4-thumb.jpg" alt="Slide 5, question 4: Do you ever feel isolated from other parts of campus?" loading="lazy" width="560" height="560"></a>
+          <a href="design/noah-miles-q5.jpg" target="_blank" rel="noopener"><img src="design/noah-miles-q5-thumb.jpg" alt="Slide 6, question 5: What do you do to take care of yourself mentally?" loading="lazy" width="560" height="560"></a>
+          <a href="design/noah-miles-q6.jpg" target="_blank" rel="noopener"><img src="design/noah-miles-q6-thumb.jpg" alt="Slide 7, question 6: What advice do you have for incoming Black student-athletes?" loading="lazy" width="560" height="560"></a>
+          <a href="design/noah-miles-q7.jpg" target="_blank" rel="noopener"><img src="design/noah-miles-q7-thumb.jpg" alt="Slide 8, question 7: Can you comfortably balance athletic and academic life?" loading="lazy" width="560" height="560"></a>
+        </div>
+        <p class="hint">Scroll the slides sideways; select one to read it full size.</p>
+        <p class="links">
+          <a href="https://www.instagram.com/p/Ck1u88GPNDr/" target="_blank" rel="noopener">View on Instagram</a>
+        </p>
       </article>
 
       <article>
@@ -336,6 +369,27 @@ footer{
         <p class="desc">Five hour-long interviews with San Diego community leaders, recorded in the USD Media Lab, then transcribed, edited, and digitized for the university&rsquo;s digital library. The Hernandez interview above is the published entry from this series.</p>
       </article>
 
+    </div>
+  </section>
+
+  <section>
+    <div class="rail"><h2>Design</h2></div>
+    <div class="body">
+      <p class="lede">Event promotion for the Black Student Resource Commons at the University of San Diego, made in Canva for print and social.</p>
+      <div class="gallery">
+        <figure>
+          <a href="design/bsrc-for-the-culture-2022.jpg" target="_blank" rel="noopener"><img src="design/bsrc-for-the-culture-2022-thumb.jpg" alt="Poster: For the Culture, Black History Month 2022, with a geometric quilt-pattern border" loading="lazy" width="480" height="640"></a>
+          <figcaption>For the Culture &mdash; Black History Month campaign poster</figcaption>
+        </figure>
+        <figure>
+          <a href="design/bsrc-bhm-opening-2024.jpg" target="_blank" rel="noopener"><img src="design/bsrc-bhm-opening-2024-thumb.jpg" alt="Flyer: Black History Month Opening Ceremony 2024, African Americans in the Arts, with illustrated performers" loading="lazy" width="495" height="640"></a>
+          <figcaption>Opening Ceremony, 2024 &mdash; built on the national theme, African Americans in the Arts</figcaption>
+        </figure>
+        <figure>
+          <a href="design/bsrc-bhm-block-party.jpg" target="_blank" rel="noopener"><img src="design/bsrc-bhm-block-party-thumb.jpg" alt="Flyer: Black History Month Block Party, co-presented with Associated Student Government" loading="lazy" width="414" height="640"></a>
+          <figcaption>Black History Month Block Party &mdash; co-branded with student government</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
