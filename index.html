@@ -230,6 +230,13 @@ article p.desc{margin:0;max-width:64ch}
 .archive li{font-family:var(--font-mono);font-size:.78rem;display:flex;flex-wrap:wrap;gap:.2rem .7rem;align-items:baseline}
 .archive li span{color:var(--muted);font-size:.72rem}
 
+
+/* ---- interview list ---- */
+.interviews{list-style:none;margin:.3rem 0 0;padding:0;display:grid;gap:.8rem;max-width:64ch}
+.interviews li{padding-left:.9rem;border-left:2px solid var(--rule)}
+.interviews a{font-weight:600}
+.interviews span{display:block;font-family:var(--font-mono);font-size:.7rem;letter-spacing:.04em;color:var(--muted);margin-top:.15rem}
+
 /* ---- background list ---- */
 dl{margin:0;display:grid;gap:1.1rem}
 @media (min-width:560px){dl{grid-template-columns:auto 1fr;gap:1rem 1.75rem;align-items:baseline}}
@@ -334,12 +341,14 @@ footer{
     <div class="body">
 
       <article>
-        <h3><em>Oral History with Audrey Mae Hernandez</em></h3>
-        <p class="credit"><span>Ethnic Studies Oral Histories, Digital USD</span><span>&middot;</span><span>September 23, 2023</span></p>
-        <p class="desc">An interview on a mixed cultural upbringing, the pursuit of education, and what Island Grad, a local nonprofit, and its mission mean to her. The interview was recorded, transcribed, and deposited in the University of San Diego&rsquo;s digital library, where it is the first item in the collection. Credited as interviewer; full audio available.</p>
-        <p class="links">
-          <a href="https://digital.sandiego.edu/ethn-oh/1/" target="_blank" rel="noopener">Listen at Digital USD</a>
-        </p>
+        <h3>Race and Oral History</h3>
+        <p class="credit"><span>Ethnic Studies Oral Histories, Digital USD</span><span>&middot;</span><span>2023</span></p>
+        <p class="desc">Three oral histories I recorded and transcribed for the University of San Diego&rsquo;s Race and Oral History course, now held in the university&rsquo;s digital library with audio and full transcripts, and credited to me as interviewer.</p>
+        <ul class="interviews">
+          <li><a href="https://digital.sandiego.edu/ethn-oh/4/" target="_blank" rel="noopener">Laila Aziz</a>, director of operations at Pillars of the Community, on organizing in southeast San Diego, resentencing campaigns, and why &ldquo;access does not equal power.&rdquo; <span>December 6, 2023</span></li>
+          <li><a href="https://digital.sandiego.edu/ethn-oh/3/" target="_blank" rel="noopener">Moana Alo</a>, educator and doctoral student, on being the &ldquo;token Hawaiian&rdquo; in classrooms and what IslandGrad could become. <span>September 23, 2023</span></li>
+          <li><a href="https://digital.sandiego.edu/ethn-oh/1/" target="_blank" rel="noopener">Audrey Mae Hernandez</a>, on a mixed cultural upbringing, the pursuit of education, and IslandGrad. <span>September 23, 2023</span></li>
+        </ul>
       </article>
 
       <article>
@@ -373,9 +382,9 @@ footer{
       </article>
 
       <article>
-        <h3>Oral history interview series</h3>
-        <p class="credit"><span>University of San Diego</span><span>&middot;</span><span>2023&ndash;2025</span></p>
-        <p class="desc">Multiple hour-long interviews with San Diego community leaders, recorded in the USD Media Lab, then transcribed and edited for the university&rsquo;s digital library and for my senior capstone project. More of these interviews are being added to the library; transcripts are available on request in the meantime.</p>
+        <h3>Community leader oral histories</h3>
+        <p class="credit"><span>University of San Diego</span><span>&middot;</span><span>Senior capstone</span></p>
+        <p class="desc">Hour-long interviews with San Diego community leaders, recorded in the USD Media Lab, then transcribed and edited for my senior capstone project. These aren&rsquo;t published; transcripts are available on request.</p>
       </article>
 
     </div>
